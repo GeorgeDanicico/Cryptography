@@ -86,6 +86,8 @@ def is_prime(n, k):
     :param k: the number of iterations
     :return:
     """
+    if n == 2:
+        return True
     if n <= 1 or n % 2 == 0:
         return False
     if n <= 3:
@@ -121,7 +123,7 @@ def is_prime(n, k):
 
 print("The prime numbers less than 1000 are:")
 l = []
-for i in range(10000):
+for i in range(1000):
     if is_prime(i, 4):
         l.append(i)
 

@@ -1,5 +1,12 @@
 from euler import Euler
 
+"""
+Algorithm for computing the value of Euler’s function for natural numbers. For a given value
+v and a given bound b, list all natural numbers less than b which have v as the value of Euler’s
+function.
+"""
+
+
 value = int(input("Enter the value >>> "))
 bound = int(input("Enter the bound >>> "))
 

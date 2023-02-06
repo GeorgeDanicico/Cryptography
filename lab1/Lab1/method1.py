@@ -1,5 +1,11 @@
 def method_one_gcd(a, b):
     minim = a if a < b else b
+
+    if a == 0:
+        return b
+    if b == 0:
+        return a
+
     divisor = 1
 
     for i in range(2, minim // 2):
